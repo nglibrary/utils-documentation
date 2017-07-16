@@ -18,8 +18,12 @@
     display: inline-block;
     font-size: 91%;
     border-radius: 2px;
+    margin: 0 4px 4px 0;
+    padding: .2em .6em;
     margin: 5px;
-    text-shadow: 1px 1px 1px rgba(50, 53, 58, 0.55);
+    line-height: 1.5;
+    vertical-align: middle;
+    text-shadow: 1px 1px 1px rgba(50, 53, 58, 0.28);
 }
 
 .label.container {

@@ -6,6 +6,7 @@ import {
   Validators
   } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
+import { NGValidators } from 'ng-validators';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +28,7 @@ export class ControlInfoDirComponent implements OnInit {
   ) { }
   ngOnInit() {
     this.reactiveForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]]
+      email: ['', [Validators.required, NGValidators.isEmail()]]
     });
   }
   tags(longString) {
