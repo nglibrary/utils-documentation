@@ -11,7 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "ngh": "ngh"
+    "ngh": "ngh --repo=https://GH_TOKEN@github.com:nglibrary/utils-documentation.git"
   },
   "dependencies": {
     "@angular/animations": "^4.0.0",
