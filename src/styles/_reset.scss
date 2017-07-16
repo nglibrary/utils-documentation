@@ -1,0 +1,18 @@
+.navbar.navbar-default {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+.form-control {
+    border-radius: 0;
+    box-shadow: none;
+    transition: all ease-in-out 0.15s;
+    &:focus {
+        border-color: $brand-primary;
+        outline: 0;
+        box-shadow: none;
+        outline: 1px solid $brand-primary;
+        outline-offset: 0px;
+    }
+}

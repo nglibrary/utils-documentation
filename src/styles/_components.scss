@@ -1,0 +1,36 @@
+.plate {
+    background: #fff;
+    border: 1px solid rgb(198, 206, 214);
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out, transform 0.2s linear;
+    border-radius: 2px;
+    h1 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    p {
+        font-size: 12px;
+        color: #74869a;
+        margin: 0;
+    }
+}
+
+.plate:hover {
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+    transform: scale(1.05);
+    h1 {
+        color: #fff;
+    }
+    p {
+        color: #d9cde0;
+    }
+}
+
+.cover {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $navbar-default-border;
+}

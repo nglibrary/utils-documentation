@@ -1,0 +1,43 @@
+<div class="container" #foo>
+  <div class="col-md-12">
+    <form role="form">
+      <h2 class="title">Template driven form</h2>
+      <section class="cover">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group" #a>
+              <label for="email">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="abc@xyz.com" name="email" [(ngModel)]="email" [controlInfo]="{selector:'.form-group'}"
+                required>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="well" [innerHTML]="tags(a.className)"></div>
+          </div>
+        </div>
+      </section>
+    </form>
+  </div>
+</div>
+<div class="container">
+  <div class="col-md-12">
+    <form role="form" [formGroup]="reactiveForm">
+      <h2 class="title">reactive form</h2>
+      <section class="cover">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group" #b>
+              <label for="email">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="abc@xyz.com" name="email" formControlName="email" [controlInfo]="{selector:'.form-group'}"
+                required>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="well" [innerHTML]="tags(b.className)"></div>
+          </div>
+        </div>
+      </section>
+    </form>
+
+  </div>
+</div>
