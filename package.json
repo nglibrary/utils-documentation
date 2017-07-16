@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href \"https://nglibrary.github.io/utils-documentation\"",
+    "build": "ng build --prod --base-href \"https://nglibrary.github.io/utils-documentation/\"",
     "test-app": "ng test",
     "test": "echo \"No test specified\" && exit 0",
     "lint": "ng lint",
